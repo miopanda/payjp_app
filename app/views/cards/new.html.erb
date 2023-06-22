@@ -1,2 +1,16 @@
-<h1>Cards#new</h1>
-<p>Find me in app/views/cards/new.html.erb</p>
+<h1>カード登録</h1>
+<%= form_with  url: cards_path, id: 'charge-form', class: 'card-form' do |f| %>
+  <div class='form-wrap'>
+    <p>カード番号</p>
+    <div id="number-form" class="input-default"></div>
+  </div>
+  <div class='form-wrap'>
+    <p>期限</p>
+    <div id="expiry-form" class="input-default"></div>
+  </div>
+  <div class='form-wrap'>
+    <p>カード背面4桁もしくは3桁の番号</p>
+    <div id="cvc-form" class="input-default"></div>
+  </div>
+  <%= f.submit "登録する", class:"button", id: "button" %>
+<% end %>
