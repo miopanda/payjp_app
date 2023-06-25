@@ -1,0 +1,27 @@
+.wrapper {
+  display: flex;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* サイドバー --------------------------
+--------------------------------------*/
+
+.side-bar {
+  width: 200px;
+  height: 100vh;
+  background-color: #253141;
+  
+}
+.side-bar a {
+  color: #fff;
+}
+
+/* メイン------------------------------
+--------------------------------------*/
+
+.content-wrapper {
+  
+}
