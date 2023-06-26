@@ -1,21 +1,28 @@
 <div class="wrapper">
   <aside class="side-bar">
-    <%= link_to 'マイページへ行く', user_path(current_user) %>
+    <h2>
+      <%= link_to 'マイページへ行く', user_path(current_user) %>
+    </h2>
   </aside>
 
   <main class="content-wrapper">
-    <div class="content">
+  <div class="content-title">
+    <h2>商品一覧</h2>
+  </div>
+    <div class="content grid">
       <% @items.each do |item| %>
-        <p>商品名：<%= item.name %></p>
-        <p>値段：<%= item.price %></p>
-        <%# もしitem_orderテーブルに保存されていたら %>
-        <% if item.item_order != nil %> 
-          <div class='sold-out'>
-            <b>Sold Out!!</b>
-          </div>
-        <% else %> 
-          <%= link_to '購入する', order_item_path(item.id), method: :post %>
-        <% end %>
+        <div class="item">
+          <p>商品名：<%= item.name %></p>
+          <p>値段：<%= item.price %>円</p>
+          <%# もしitem_orderテーブルに保存されていたら %>
+          <% if item.item_order != nil %> 
+            <div class='sold-out'>
+              <b>Sold Out!!</b>
+            </div>
+          <% else %> 
+            <%= link_to '購入する', order_item_path(item.id), method: :post, class: 'button' %>
+          <% end %>
+        </div>
       <% end %>
     </div>
   </main>
