@@ -2,6 +2,7 @@
 
 .wrapper {
   display: flex;
+  flex-direction: column;
 }
 
 a {
@@ -10,12 +11,31 @@ a {
 
 * {
   box-sizing: border-box;
+  line-height: 1.7;
 }
+
+/* ヘッダー --------------------------
+--------------------------------------*/
+
+.header-nav {
+  text-align: end;
+  padding: 0 13%;
+  background-color: red;
+}
+
+.nav-menu {
+  list-style: none;
+}
+
+.nav-menu a {
+  color: #fff;
+}
+
 
 /* サイドバー --------------------------
 --------------------------------------*/
 
-.side-bar {
+/* .side-bar {
   width: 200px;
   height: 100vh;
   background-color: #253141;
@@ -27,7 +47,7 @@ a {
   font-size: 18px;
   font-weight: normal;
   
-}
+} */
 
 /* メイン------------------------------
 --------------------------------------*/

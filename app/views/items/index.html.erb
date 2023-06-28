@@ -1,9 +1,12 @@
 <div class="wrapper">
-  <aside class="side-bar">
-    <h2>
-      <%= link_to 'マイページへ行く', user_path(current_user) %>
-    </h2>
-  </aside>
+
+  <header class="header-nav">
+    <nav>
+      <ul class="nav-menu">
+        <li><%= link_to 'マイページへ行く', user_path(current_user) %></li>
+      </ul>
+    </nav>
+  </header>
 
   <main class="content-wrapper">
   <div class="content-title">
