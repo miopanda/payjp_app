@@ -20,7 +20,8 @@ a {
 .header-nav {
   text-align: end;
   padding: 0 13%;
-  background-color: red;
+  background-color: #00d9ff;
+  /* background-image: linear-gradient(#00d9ff, #f9e54e); */
 }
 
 .nav-menu {

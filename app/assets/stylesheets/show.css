@@ -1,0 +1,13 @@
+.AccountPage {
+  width: 1170px;
+  padding: 50px 300px 50px 80px;
+  margin: 0 auto;
+  margin-top: 50px;
+  border: 1px solid lightslategray;
+  border-radius: 5% 50% 10% 0;
+  background-image: linear-gradient(#00d9ff, #f9e54e);
+}
+
+.AccountPage__title {
+  border-bottom: #fff 3px solid;
+}
